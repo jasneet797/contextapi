@@ -1,15 +1,17 @@
-import { useState } from 'react'
-import UserContextProvider from '/home/deftsoft/Downloads/context api/src/Context/UserContext.jsx'
-import './App.css'
 
+import {UserProvider} from './Context/UserContext.jsx'
+
+import Login from './Components/Login.jsx'
+
+import Profile from './Components/Profile.jsx'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
      <UserProvider>
-      <h1>React with jas</h1>
+      <Login class="login"/>
+      <Profile class="profile"/>
      </UserProvider>
+    
     </>
   )
 }
